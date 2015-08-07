@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Responsive Email Design</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <style type="text/css">
+
+			/* CLIENT-SPECIFIC STYLES ------------------- */
+			
+				#outlook a {
+					padding: 0; /* Force Outlook to provide a "view in browser" message */
+				} 
+				
+				.ReadMsgBody {
+					width: 100%; /* Force Hotmail to display emails at full width */
+				} 
+				
+				.ExternalClass {
+					width:100%; /* Force Hotmail to display emails at full width */
+				}
+				
+				.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+					line-height: 100%; /* Force Hotmail to display normal line spacing */
+				}
+				
+				body, table, td, a { /* Prevent WebKit and Windows mobile changing default text sizes */
+					-webkit-text-size-adjust: 100%;
+					-ms-text-size-adjust: 100%;
+				}
+				
+				table, td { /* Remove spacing between tables in Outlook 2007 and up */
+					mso-table-lspace: 0pt;
+					mso-table-rspace:0pt;
+				}
+				
+				img { /* Allow smoother rendering of resized image in Internet Explorer */
+					-ms-interpolation-mode: bicubic;
+				}
+			
+			/* RESET STYLES --------------------------- */
+			
+				body { 
+					height: 100% !important;
+					margin: 0;
+					padding: 0;
+					width: 100% !important;
+				}
+				
+				img { 
+					border: 0;
+					height: auto;
+					line-height: 100%;
+					outline: none;
+					text-decoration: none;
+				}
+				
+				table {
+					border-collapse: collapse !important;
+				}
+				
+			/* iOS BLUE LINKS */
+				
+				.apple-links a { 
+					color: #999999;
+					text-decoration: none;
+				}
+			
+			/* MOBILE STYLES ------------------------ */
+			
+			
+		</style>
+        
+	</head>
+
+	<body style="margin: 0 auto 0 auto; padding: 0; max-width: 1000px">
+
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; max-width: 800px; padding: 0 auto 0 auto;">
+            <tr>
+                <td align="center" bgcolor="#ffffff" style="padding: 20px 0 20px 0;">
+                    
+                    <!-- HIDDEN PREHEADER -->
+                    <div style="display: none; font-size: 1px; color:#333333; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+                    The latest from PlanPhilly.com
+                    </div>
+                    
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <!-- LOGO/PREHEADER TEXT -->
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td align="center" style="padding: 0 5% 0 5%; width:90%;">
+                                        	<img src="http://planphilly.com/uploads/media_items/planphilly-logo-new.original.png" alt="PlanPhilly"  border="0" style="max-width:80%; display: block;" />
+                                        </td>
+                                    
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; max-width: 800px;">
+            <tr>
+                <td align="center"  bgcolor="#ffffff" style="">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0"  width="100%">
+                                
+                                    <tr>
+                                        <td align="center" style="padding: 20px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: bold; font-size: 32px; line-height: 36px; padding: 0 5% 0 5%; width: 90%;">
+                                        	Featured Articles
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table> 
+
+
+
+
+
+
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; max-width: 800px;">
+            <tr>
+                <td align="center"  bgcolor="#ffffff" style="padding: 4% 0 0 0;">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0"  width="100%">  
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width:90%;">
+                                <a href="http://www.planphilly.com" style="">
+                                    <img src="http://planphilly.com/uploads/media_items/15-trolley-friday-afternoon-15th-and-girard.0.96.1024.490.752.360.c.jpg" style="max-width: 100%;"/>
+                                </a>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #006699; font-family: Arial, sans-serif; font-weight: normal; font-size: 24px; line-height: 28px;">
+                                <a href="http://www.planphilly.com" style="color: #006699;">
+                                    Article 1 Title. Article 1 Title. Article 1 Title.
+                                </a>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 22px;">
+                                Article 1 Description. Article 1 Description. Article 1 Description. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 16px;">
+                                Article 1 Date and Author info
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 4% 5% 0 5%; width:90%;">
+                                <hr style="width: 100%;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; max-width: 800px;">
+            <tr>
+                <td align="center"  bgcolor="#ffffff" style="padding: 4% 0 0 0;">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0"  width="100%">  
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width:90%;">
+                                <a href="http://www.planphilly.com" style="">
+                                    <img src="http://planphilly.com/uploads/media_items/15-trolley-friday-afternoon-15th-and-girard.0.96.1024.490.752.360.c.jpg" style="max-width: 100%;"/>
+                                </a>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #006699; font-family: Arial, sans-serif; font-weight: normal; font-size: 24px; line-height: 28px;">
+                                <a href="http://www.planphilly.com" style="color: #006699;">
+                                    Article 2 Title. Article 2 Title. Article 2 Title.
+                                </a>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 22px;">
+                                Article 2 Description. Article 2 Description. Article 2 Description. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 16px;">
+                                Article 2 Date and Author info
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 4% 5% 0 5%; width:90%;">
+                                <hr style="width: 100%;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; max-width: 800px;">
+            <tr>
+                <td align="center"  bgcolor="#ffffff" style="padding: 4% 0 0 0;">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0"  width="100%">  
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width:90%;">
+                                <a href="http://www.planphilly.com" style="">
+                                    <img src="http://planphilly.com/uploads/media_items/15-trolley-friday-afternoon-15th-and-girard.0.96.1024.490.752.360.c.jpg" style="max-width: 100%;"/>
+                                </a>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #006699; font-family: Arial, sans-serif; font-weight: normal; font-size: 24px; line-height: 28px;">
+                                <a href="http://www.planphilly.com" style="color: #006699;">
+                                    Article 3 Title. Article 3 Title. Article 3 Title.
+                                </a>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 22px;">
+                                Article 3 Description. Article 3 Description. Article 3 Description. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 16px;">
+                                Article 3 Date and Author info
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 4% 5% 0 5%; width:90%;">
+                                <hr style="width: 100%;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; max-width: 800px;">
+            <tr>
+                <td align="center"  bgcolor="#ffffff" style="padding: 4% 0 0 0;">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0"  width="100%">  
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width:90%;">
+                                <a href="http://www.planphilly.com" style="">
+                                    <img src="http://planphilly.com/uploads/media_items/15-trolley-friday-afternoon-15th-and-girard.0.96.1024.490.752.360.c.jpg" style="max-width: 100%;"/>
+                                </a>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #006699; font-family: Arial, sans-serif; font-weight: normal; font-size: 24px; line-height: 28px;">
+                                <a href="http://www.planphilly.com" style="color: #006699;">
+                                    Article 4 Title. Article 4 Title. Article 4 Title.
+                                </a>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 22px;">
+                                Article 4 Description. Article 4 Description. Article 4 Description. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 16px;">
+                                Article 4 Date and Author info
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 4% 5% 0 5%; width:90%;">
+                                <hr style="width: 100%;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; max-width: 800px;">
+            <tr>
+                <td align="center"  bgcolor="#ffffff" style="padding: 4% 0 0 0;">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0"  width="100%">  
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width:90%;">
+                                <a href="http://www.planphilly.com" style="">
+                                    <img src="http://planphilly.com/uploads/media_items/15-trolley-friday-afternoon-15th-and-girard.0.96.1024.490.752.360.c.jpg" style="max-width: 100%;"/>
+                                </a>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #006699; font-family: Arial, sans-serif; font-weight: normal; font-size: 24px; line-height: 28px;">
+                                <a href="http://www.planphilly.com" style="color: #006699;">
+                                    Article 5 Title. Article 5 Title. Article 5 Title.
+                                </a>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 22px;">
+                                Article 5 Description. Article 5 Description. Article 5 Description. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 16px;">
+                                Article 5 Date and Author info
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 4% 5% 0 5%; width:90%;">
+                                <hr style="width: 100%;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+
+        
+
+
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; max-width: 800px;">
+            <tr>
+                <td align="center" style="bgcolor:#ffffff">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center" style="padding: 4% 5% 0 5%; width: 90%; color: #000000; font-family: Arial, sans-serif; font-weight: bold; font-size: 32px; line-height: 36px; ">
+                                <a href="http://www.planphilly.com/articles" style="color: #000000; font-family: Arial, sans-serif; font-weight: bold; font-size: 22px; line-height: 28px;">
+                                	More Articles
+                                </a>  
+                            </td>
+						</tr>
+                        <tr>
+                            <td style="padding: 4% 5% 0 5%; width:90%;">
+                            	<hr style="width:100%;">
+                            </td>
+                        </tr>        
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; max-width: 800px;">
+            <tr>
+                <td align="center"  bgcolor="#ffffff" style="padding: 4% 0 0 0;">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center" style="padding: 0 5% 0 5%; width:90%;">
+                                <a href="http://www.planphilly.com/eyesonthestreet" style="">
+                                	<img src="http://planphilly.com/uploads/media_items/logo-eots2.original.png" style="max-width:90%;"/>
+                                </a>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width:90%;">
+                                <a href="http://www.planphilly.com" style="">
+                                	<img src="http://planphilly.com/uploads/media_items/15-trolley-friday-afternoon-15th-and-girard.0.96.1024.490.752.360.c.jpg" style="max-width: 100%;"/>
+                                </a>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td align="left" style="padding:0 5% 0 5%; width: 90%; color: #339933; font-family: Arial, sans-serif; font-weight: normal; font-size: 24px; line-height: 28px;">
+                                <a href="http://www.planphilly.com" style="color: #2E6100;">
+                                	EOTS Article Title. EOTS Article Title. EOTS Article Title.
+                                </a>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #2E6100; font-family: Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 22px;">
+                            	EOTS Article Description. EOTS Article Description. EOTS Article Description. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 0 5% 0 5%; width: 90%; color: #2E6100; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 16px;">
+                            	EOTS Article Date and Author
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 4% 5% 0 5%; width:90%;">
+                            	<hr style="width: 100%;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; max-width: 800px;">
+            <tr>
+                <td align="center" bgcolor="#ffffff" style="padding: 4% 0 0 0;">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center" style="padding:0 5% 5% 5%; width: 90%;">
+                            	<a href="http://www.planphilly.com/events">
+                                	<img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/7/attachments/original/upcomingevents.png?1436362654" alt="Upcoming Events" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; background-color: #589263; -webkit-border-radius: 4px; border-radius: 4px;" />
+                                </a>    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding:0 15% 0 15%; width: 70%; color: #111111; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; line-height: 22px;">
+                                <a href="http:www.planphilly.com/events" style="color: #111111; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; line-height: 22px;">
+                                	Event 1 Title. Event 1 Title. Event 1 Title. Event 1 Title.
+                                </a>      
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding:0 15% 0 15%; width: 70%;color: #111111; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 22px;">
+                            	Event 1 Date
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding:0 15% 20% 15%; width: 70%; padding-bottom: 12px; color: #111111; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 20px;">
+                            	Event 1 Location. Event 1 Location. Event 1 Location.
+                            </td>
+                        </tr>  
+                    </table>
+                    
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        
+                        <tr>
+                            <td align="left" style="padding:0 15% 0 15%; width: 70%; color: #111111; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; line-height: 22px;">
+                                <a href="http:www.planphilly.com/events" style="color: #111111; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; line-height: 22px;">
+                                	Event 2 Title. Event 2 Title. Event 2 Title. Event 2 Title.
+                                </a>      
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding:0 15% 0 15%; width: 70%;color: #111111; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 22px;">
+                            	Event 2 Date
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding:0 15% 20% 15%; width: 70%; padding-bottom: 12px; color: #111111; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 20px;">
+                            	Event 2 Location. Event 2 Location. Event 2 Location.
+                            </td>
+                        </tr>   
+                    </table>
+                        
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        
+                        <tr>
+                            <td align="left" style="padding:0 15% 0 15%; width: 70%; color: #111111; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; line-height: 22px;">
+                                <a href="http:www.planphilly.com/events" style="color: #111111; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; line-height: 22px;">
+                                	Event 3 Title. Event 3 Title. Event 3 Title. Event 3 Title.
+                                </a>      
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding:0 15% 0 15%; width: 70%;color: #111111; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 22px;">
+                            	Event 3 Date
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding:0 15% 20% 15%; width: 70%; padding-bottom: 12px; color: #111111; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 20px;">
+                            	Event 3 Location. Event 3 Location. Event 3 Location.
+                            </td>
+                        </tr>   
+                    </table>
+                
+                </td>
+            </tr>
+        </table>
+
+
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; max-width: 800px;">
+            <tr>
+                <td align="center"  bgcolor="#ffffff" style="padding: 4% 0 0 0; ">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="center" style="padding: 0 5% 8% 5%; width: 90%;">
+                                <a href="http://www.planphilly.com"> 
+                                	<img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/7/attachments/original/events-email-signup.png?1436362793" alt="Sign up for our events email" style="max-width: 90%;" />
+                                </a>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding: 0 5% 8% 5%; width: 90%;">
+                                <a href="http://www.newsworks.org"> 
+                                	<img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/7/attachments/original/newsworks.jpg?1436362656" alt="NewsWorks" style="max-width: 90%;" />
+                                </a>  
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+</body>
+</html>

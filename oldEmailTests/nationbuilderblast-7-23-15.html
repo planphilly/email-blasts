@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Responsive Email Design</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
+  
+  /* CLIENT-SPECIFIC STYLES ------------------- */
+  
+  #outlook a {
+    padding: 0; /* Force Outlook to provide a "view in browser" message */
+  } 
+  
+  .ReadMsgBody {
+    width: 100%; /* Force Hotmail to display emails at full width */
+  } 
+  
+  .ExternalClass {
+    width:100%; /* Force Hotmail to display emails at full width */
+  }
+  
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%; /* Force Hotmail to display normal line spacing */
+  }
+  
+  body, table, td, a { /* Prevent WebKit and Windows mobile changing default text sizes */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  table, td { /* Remove spacing between tables in Outlook 2007 and up */
+    mso-table-lspace: 0pt;
+    mso-table-rspace:0pt;
+  }
+  
+  img { /* Allow smoother rendering of resized image in Internet Explorer */
+    -ms-interpolation-mode: bicubic;
+	-webkit-border: none!important;
+	
+  }
+
+  /* RESET STYLES --------------------------- */
+  
+  body { 
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+  }
+  
+  img { 
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  table {
+    border-collapse: collapse !important;
+	table-layout: fixed;
+  }
+
+  /* iOS BLUE LINKS */
+  
+  .apple-links a { 
+    color: #999999;
+    text-decoration: none;
+  }
+
+  /* MOBILE STYLES ------------------------ 
+  
+  @media screen and (max-width: 600px) {      */
+
+    td[class="logo"] img {
+      margin: 0 auto !important;
+    }
+
+    table[class="wrapper"] {
+      width: 100% !important;
+      padding: 0 0 0 0;
+    } 
+    
+    table[id="wrapper1"] {
+		width: 100% !important;
+		}
+
+    td[class="mobile-image-pad"] {
+      padding: 0 10px 0 10px !important;
+    }
+    
+    td[class="mobile-title-pad"] {
+      padding: 30px 10px 0px 10px !important;
+    }
+
+    td[class="mobile-text-pad"] {
+      padding: 10px 10px 10px 10px !important;
+    }
+
+    td[class="mobile-column-right"] {
+      padding-top: 20px !important;
+    }
+
+    img[class="fluid-image"] {
+      width: 100% !important;
+      height: auto !important;
+    }
+	
+	img[class="fluid-image2"] {
+      width: 70% !important;
+      height: auto !important;
+	  margin: 0 auto !important;
+    }
+
+    td[class="hide"] {
+      display: none !important;
+    } 
+
+    td[class="mobile-button"] {
+      padding: 12px 60px 12px 60px !important;
+    }
+  
+    td[class="mobile-button"] a {
+      font-size: 24px !important;
+    }
+  
+    
+		</style>
+	</head>
+	<body style="margin: 0; padding: 0; width: 100%;">
+
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+        	<tr>
+            <td align="center" bgcolor="#006699" style="display: block; padding: 20px 0 20px 0; width: 100%;">
+                    <!-- HIDDEN PREHEADER -->
+                    <div style="display: none; font-size: 1px; color:#333333; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+                    The lastest from PlanPhilly.com
+                    </div>
+                        <!-- WRAPPER TABLE -->
+                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" id="wrapper1" style="table-layout: fixed; max-width: 600px;">
+                            <!-- LOGO/PREHEADER TEXT -->
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                                        <tr>
+                                            <td align="center" class="logo" style="padding: 0 0 10px 0;">
+                                                <a href="http://www.planphilly.com">
+                                                  <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/11/attachments/original/planphilly-logo-vector-gray.png?1437420198" alt="PlanPhilly"  height="auto" border="0" style="display: block;  max-width: 66%;" class="fluid-image" />
+                                                </a>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                         	<td align="center" class="logo" style="padding: 0 0 0 0;">      
+                                                <a href="http://www.newsworks.org">
+                                                  <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/whyy-newsworks-logo.png?1437617858" alt="NewsWorks"  height="auto" border="0" style="display: block; max-width: 66%;" class="fluid-image" />
+                                                </a> 
+                                            </td>
+                                
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+						</table>
+                </td>
+            </tr>
+		</table>
+        
+        
+        
+        
+        
+<!--  START COPYING FROM HERE FOR NATIONBUILDER 'BODY' // -->
+<!--  START COPYING FROM HERE FOR NATIONBUILDER 'BODY' // -->
+<!--  START COPYING FROM HERE FOR NATIONBUILDER 'BODY' // -->
+<!--  START COPYING FROM HERE FOR NATIONBUILDER 'BODY' // -->
+<!--  START COPYING FROM HERE FOR NATIONBUILDER 'BODY' // -->       
+   
+   
+   
+   
+   
+   
+        
+
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+            <tr>
+            	<td align="center"  bgcolor="#ffffff" style="padding: 20px 0 10px 0;">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0" class="wrapper" style="table-layout: fixed;  max-width: 600px;">
+                        <tr>
+                        	<td bgcolor="#ffffff">
+                            	<table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                    <tr>
+                                    	<td>
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td align="center" width="100%" style="padding: 20px 0 20px 0; color: #000000; font-family: Arial, sans-serif; font-weight: bold; font-size: 32px; line-height: 36px;" >
+                                                        Featured Articles
+                                                    </td>
+                                                </tr>    
+                                            </table>
+                                            
+                                            <!--  BEGIN ARTICLE ONE  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" style="padding: 5% 0 5% 0;">
+                                                                    <a href="http://planphilly.com/articles/2015/07/14/how-easy-is-it-to-accidentally-ride-your-bike-onto-i-676">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/how-easy-is-it-to-accidentally-ride-your-bike-onto-i-676.jpg?1437648561" alt="How easy is it to accidentally ride your bike onto I-676?" height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #f46e6c; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;" class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://planphilly.com/articles/2015/07/14/how-easy-is-it-to-accidentally-ride-your-bike-onto-i-676" style="color: #006699;">
+                                                                        How easy is it to accidentally ride your bike onto I-676?
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 15px; line-height: 18px;" class="mobile-text-pad">
+                                                                    Nobody seems to know yet why two Indego riders <a href="http://www.philly.com/philly/news/20150714_Motorist_s_video_shows_Indego_bicyclists_using_I-676.html">ended up on I-676</a>, but the lesson is that as <a href="http://planphilly.com/articles/2015/03/12/se-pennsylvania-is-driving-less-even-as-economy-grows-bucking-regional-and-national-trends">the city continues to become more multimodal</a>, there's a heightened need to really spell out where different types of street users are supposed to be.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14px;" class="mobile-text-pad">
+                                                                    JULY 14, 2015 &nbsp; &nbsp; &nbsp; BY JON GEETING
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    <br>
+                                                                    <br>
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END ARTICLE ONE  -->
+                                            
+                                            <!--  BEGIN ARTICLE TWO  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" style="padding: 5% 0 5% 0;">
+                                                                    <a href="http://planphilly.com/articles/2015/07/14/allan-domb-from-condo-king-to-tax-collector">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/allan-domb-from-condo-king-to-tax-collector.jpg?1437648818" alt="Allan Domb: From Condo King to Tax Collector?" height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #f46e6c; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;" class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://planphilly.com/articles/2015/07/14/allan-domb-from-condo-king-to-tax-collector" style="color: #006699;">
+                                                                        Allan Domb: From Condo King to Tax Collector?
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 15px; line-height: 18px;" class="mobile-text-pad">
+                                                                    Domb, a high-end real estate broker who was among the top vote-getters in the May Democratic primary election for an at-large City Council seat, said the city can collect a significant portion of the millions of dollars in back taxes it’s owed if it follows New York’s lead, and should simply wipe the remaining balance off the books.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14px;" class="mobile-text-pad">
+                                                                    JULY 14, 2015 &nbsp; &nbsp; &nbsp;  BY JARED BREY
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    <br>
+                                                                    <br>
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END ARTICLE TWO  -->
+                                            
+                                            <!--  BEGIN ARTICLE THREE  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" style="padding: 5% 0 5% 0;">
+                                                                    <a href="http://planphilly.com/articles/2015/07/15/did-limited-largesse-muddle-drpa-s-mission-control">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/did-limited-largesse-muddle-drpa-s-mission-control.jpg?1437649155" alt="Did limited largesse muddle DRPA's mission control?" height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #f46e6c; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;" class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://planphilly.com/articles/2015/07/15/did-limited-largesse-muddle-drpa-s-mission-control" style="color: #006699;">
+                                                                        Did limited largesse muddle DRPA's mission control?
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 15px; line-height: 18px;" class="mobile-text-pad">
+                                                                    The agency's Board of Commissioners voted to approve an $18-per-month discount for drivers that cross its bridges at least 18 times in a given month. The decision was met with some derision by some PATCO riders, who won’t receive their own discount.  
+
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14px;" class="mobile-text-pad">
+                                                                    JULY 15, 2015 &nbsp; &nbsp; &nbsp; BY JIM SAKSA
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    <br>
+                                                                    <br>
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END ARTICLE THREE  -->
+                                            
+                                            <!--  BEGIN ARTICLE FOUR  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" style="padding: 5% 0 5% 0;">
+                                                                    <a href="http://planphilly.com/articles/2015/07/17/who-owns-the-streetscape-an-even-more-complicated-question">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/who-owns-the-streetscape-an-even-more-complicated-question.png?1437649394" alt="Who owns the streetscape? An even more complicated question" height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #f46e6c; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;" class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://planphilly.com/articles/2015/07/17/who-owns-the-streetscape-an-even-more-complicated-question" style="color: #006699;">
+                                                                        Who owns the streetscape? An even more complicated question
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 15px; line-height: 18px;" class="mobile-text-pad">
+                                                                    According to the Center City District, there are 23 city entities responsible for 83 different types of streetscape furnishings and installations across Center City alone. The number of agencies and breadth of streetscape improvements would likely go up quite a bit if you looked citywide. 
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14px;" class="mobile-text-pad">
+                                                                    JULY 17, 2015 &nbsp; &nbsp; &nbsp; BY JIM SAKSA
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    <br>
+                                                                    <br>
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END ARTICLE FOUR  -->
+                                            
+                                            <!--  BEGIN ARTICLE FIVE  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" style="padding: 5% 0 5% 0;">
+                                                                    <a href="http://planphilly.com/articles/2015/07/21/maryland-developers-see-opportunity-in-our-institutional-shells">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/maryland-developers-see-opportunity-in-our-institutional-shells.jpg?1437649697" alt="Maryland developers see opportunity in Philly's institutional shells" height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #f46e6c; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;" class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://planphilly.com/articles/2015/07/21/maryland-developers-see-opportunity-in-our-institutional-shells" style="color: #006699;">
+                                                                        Maryland developers see opportunity in Philly's institutional shells
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 15px; line-height: 18px;" class="mobile-text-pad">
+                                                                    In the next few months, Concordia Group expects to close on a deal to purchase five school buildings put up for sale two years ago when the Philadelphia School District was trying to raise money through real estate sales. The five former school buildings are in Pennsport, Point Breeze, Port Richmond and Germantown.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14px;" class="mobile-text-pad">
+                                                                    JULY 21, 2015 &nbsp; &nbsp; &nbsp; BY JARED BREY
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END ARTICLE FIVE  -->
+                                            
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td align="center" style="padding: 10px 0 20px 0; color: #000000; font-family: Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 22px;" class="mobile-text-pad">
+                                                        
+                                                        <a href="http://www.planphilly.com/articles" style="color: #000000;">
+                                                            More Articles from this week
+                                                        </a>    
+                                                    </td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>
+                                                        
+                                                        <hr>
+                                                        
+                                                    </td>
+                                                </tr>    
+                                            </table>
+                                            
+                                            <!--  BEGIN EOTS SECTION  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        
+                                                        <!--  BEGIN EOTS LOGO  //  -->
+                                                        
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" align="center" style="padding: 0 0 10px 0;">
+                                                                    <a href="http://www.planphilly.com/eyesonthestreet">
+                                                                        <img src="http://planphilly.com/uploads/media_items/logo-eots2.original.png" alt="Eyes on the Street"  height="auto" border="0" style="display: block; padding: 0; color: #000000; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #ffffff; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;"  />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        
+                                                        <!--  //  END EOTS LOGO  -->
+                                                        
+                                                        <!--  BEGIN EOTS ARTICLE  //  -->
+                                                        
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" style="padding: 10px 0 10px 0;">
+                                                                    <a href="http://planphilly.com/eyesonthestreet/2015/07/22/st-laurentius-score-one-for-the-underdogs" >
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/15/attachments/original/st-laurentius-score-one-for-the-underdogs.jpg?1437656680" alt="St. Laurentius: Score one for the Underdogs" height="auto" border="0" style="display: block; padding: 0; color: #000000; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #ffffff; -webkit-border-radius: 4px; border-radius: 4px; border:none; max-width: 100%; " class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://planphilly.com/eyesonthestreet/2015/07/22/st-laurentius-score-one-for-the-underdogs" style="color: #638438;">
+                                                                        St. Laurentius: Score one for the Underdogs
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14px;" class="mobile-text-pad">
+                                                                    WEDNESDAY, JULY 22, 2015 &nbsp; &nbsp; &nbsp; BY MICHAEL GREENLE
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    <br>
+                                                                    <br>
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                        
+                                                        <!--  // END EOTS ARTICLE  -->
+                                                        
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END EOTS SECTION  -->
+                                            
+                                            
+                                            <!-- BEGIN EVENTS SECTION  //  -->
+                                            
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">    
+                                                <tr>
+                                                    <td style="min-width: 280px;">
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" align="center" style="padding: 5% 0 5% 0;">
+                                                                    <a href="http://www.planphilly.com/events">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/upcomingevents.png?1437618108" alt="PlanPhilly Events Calendar"  height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; background-color: #564e75; -webkit-border-radius: 4px; border-radius: 4px;max-width: 100%;"  />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td style="padding: 0 20% 0 20%;">
+                                                        
+                                                                    <!--  BEGIN EVENT ONE  //  -->
+                                                                    
+                                                                    <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                                        <tr>    
+                                                                            <td align="left" style="padding: 10px 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 22px;">
+                                                                                <a href="http://planphilly.com/events/2015/07/23/i-got-hit-by-a-car-now-what-a-conversation-with-piscitello-law" style="color: #000000;">
+                                                                                    "I got hit by a car, now what?" A conversation with Piscitello Law
+                                                                                </a>    
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" style="padding: 0 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;">
+                                                                                Thursday, July 23, 6:00 pm - 8:00 pm
+                                                                                    
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" style="padding: 0 10px 10px 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 11px; line-height: 14px;">
+                                                                                W/N W/N Coffee Bar, 931 Spring Garden St
+                                                                                    
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    
+                                                                    <!--  //  END EVENT ONE  -->
+                                                                                
+                                                                    <!-- BEGIN EVENT TWO  //  -->
+                                                                    
+                                                                    <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">   
+                                                                        <tr>
+                                                                            <td align="left" style="padding: 20px 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 22px;">
+                                                                                <a href="http://planphilly.com/events/2015/07/25/forgotten-chestnut-street" style="color: #000000;">
+                                                                                    Forgotten Chestnut Street
+                                                                                </a>    
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" style="padding: 0 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;">
+                                                                                Saturday, July 25, 11:00 am - 1:00 pm
+                                                                                    
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" style="padding: 0 10px 10px 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 11px; line-height: 14px;">
+                                                                                9th and Chestnut, Southwest Corner, next to parking lot
+                                                                                    
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    
+                                                                    <!--  //  END EVENT TWO  -->
+                                                                    
+                                                                    <!-- BEGIN EVENT THREE  //  -->
+                                                                    
+                                                                    <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">   
+                                                                        <tr>
+                                                                            <td align="left" style="padding: 20px 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 22px;">
+                                                                                <a href="http://planphilly.com/events/2015/07/26/death-life-at-mt-moriah-cemetery" style="color: #000000;">
+                                                                                    Death and Life at Mt. Moriah Cemetery
+                                                                                </a>    
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" style="padding: 0 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;">
+                                                                                Sunday, July 26, 10:30 am - 12:30 pm
+                                                                                    
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" style="padding: 0 10px 10px 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 11px; line-height: 14px;">
+                                                                                Main Cemetary Gate, 62nd and Kingsessing
+                                                                                    
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    
+                                                                    <!--  //  END EVENT THREE  -->
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                         </table>       
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            
+                                            <!--  //  END EVENTS SECTION  -->
+                                            
+                                            <!-- BEGIN HOUSE ADS  //  -->
+                                            
+                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" class="wrapper" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td style="padding: 20px 0 0 0; width: 100%;">
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="center" style="padding: 0 0 20px 0;">
+                                                                    <a href="http://planphilly.nationbuilder.com/subscribe">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/7/attachments/original/events-email-signup.png?1436362793" alt="Sign up for our events newsletter!"  height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; background-color: #589263; -webkit-border-radius: 4px; border-radius: 4px; max-width: 300px;" class="fluid-image2"/>
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" style="padding: 10px 0 10px 0;">
+                                                                    <a href="http://www.newsworks.org">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/newsworkslogo.jpg?1437618167" alt="NewsWorks"  height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; background-color: #589263; -webkit-border-radius: 4px; border-radius: 4px; max-width: 300px;" class="fluid-image2" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            
+                                            <!--  //  END HOUSE ADS  -->
+                                		</td>
+                                	</tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>        
+        </table>            
+                    
+        <!-- // END CONTAINER TABLE  -->
+
+
+
+
+
+
+
+
+<!--   //  STOP COPYING HERE FOR NATIONBUILDER 'BODY'  -->    
+<!--   //  STOP COPYING HERE FOR NATIONBUILDER 'BODY'  --> 
+<!--   //  STOP COPYING HERE FOR NATIONBUILDER 'BODY'  --> 
+<!--   //  STOP COPYING HERE FOR NATIONBUILDER 'BODY'  --> 
+<!--   //  STOP COPYING HERE FOR NATIONBUILDER 'BODY'  --> 
+
+
+
+
+        
+        <!-- BEGIN FOOTER  // -->
+
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+            <tr>
+                <td align="center" bgcolor="#006699" style="width: 100%; padding: 0 0 20px 0;">
+                    
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="wrapper" style="table-layout: fixed; max-width: 600px;">
+                        <tr>
+                            <td align="center" style="padding: 5% 0 5% 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;" class="mobile-text-pad">
+                            	<table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                	<tr>
+                                    	<td style="padding: 0 10% 0 10%;">
+                                            <br/>
+                                            -=-=-<br/>
+                                            {{ settings.official_name }}{% if settings.has_address? %} &middot; {{ settings.address.one_line }} {% endif %}
+                                            <br/>This email was sent to {{ recipient.email }}.  To stop receiving emails, <a href="{{ settings.site.unsubscribe_url }}" style="color:#ffffff;">click here</a>.
+                                            {% if broadcaster.has_twitter? or broadcaster.has_facebook? %}
+                                            <br/>You can also keep up with {{ broadcaster.name }}
+                                              {% if broadcaster.has_twitter? and broadcaster.has_facebook_page? %}
+                                                on <a href="{{ broadcaster.twitter_profile_url }}" style="color:#ffffff;">Twitter</a> or <a href="{{ broadcaster.facebook_page_profile_url }}" style="color:#ffffff;">Facebook</a>.
+                                              {% elsif broadcaster.has_twitter? %}
+                                                on <a href="{{ broadcaster.twitter_profile_url }}" style="color:#ffffff;">Twitter</a>.
+                                              {% elsif broadcaster.has_facebook_page? %}
+                                              on <a href="{{ broadcaster.facebook_page_profile_url }}" style="color:#ffffff;">Facebook</a>.
+                                              {% endif %}
+                                            {% endif %}
+                                            <br/>
+                                            -=-=-<br/><br/>
+                                            Created with <a href="http://nationbuilder.com/" style="color:#ffffff;">NationBuilder</a>, the essential toolkit for leaders.
+                                        
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>        
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <!--  // END FOOTER  -->
+
+	</body>
+</html>

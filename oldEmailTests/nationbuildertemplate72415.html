@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Responsive Email Design</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
+  
+  /* CLIENT-SPECIFIC STYLES ------------------- */
+  
+  #outlook a {
+    padding: 0; /* Force Outlook to provide a "view in browser" message */
+  } 
+  
+  .ReadMsgBody {
+    width: 100%; /* Force Hotmail to display emails at full width */
+  } 
+  
+  .ExternalClass {
+    width:100%; /* Force Hotmail to display emails at full width */
+  }
+  
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%; /* Force Hotmail to display normal line spacing */
+  }
+  
+  body, table, td, a { /* Prevent WebKit and Windows mobile changing default text sizes */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  table, td { /* Remove spacing between tables in Outlook 2007 and up */
+    mso-table-lspace: 0pt;
+    mso-table-rspace:0pt;
+  }
+  
+  img { /* Allow smoother rendering of resized image in Internet Explorer */
+    -ms-interpolation-mode: bicubic;
+	-webkit-border: none!important;
+	
+  }
+
+  /* RESET STYLES --------------------------- */
+  
+  body { 
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+  }
+  
+  img { 
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  table {
+    border-collapse: collapse !important;
+	table-layout: fixed;
+  }
+
+  /* iOS BLUE LINKS */
+  
+  .apple-links a { 
+    color: #999999;
+    text-decoration: none;
+  }
+
+  /* MOBILE STYLES ------------------------ 
+  
+  @media screen and (max-width: 600px) {      */
+
+    td[class="logo"] img {
+      margin: 0 auto !important;
+    }
+
+    table[class="wrapper"] {
+      width: 100% !important;
+      padding: 0 0 0 0;
+    } 
+    
+    table[id="wrapper1"] {
+		width: 100% !important;
+		}
+
+    td[class="mobile-image-pad"] {
+      padding: 0 10px 0 10px !important;
+    }
+    
+    td[class="mobile-title-pad"] {
+      padding: 30px 10px 0px 10px !important;
+    }
+
+    td[class="mobile-text-pad"] {
+      padding: 10px 10px 10px 10px !important;
+    }
+
+    td[class="mobile-column-right"] {
+      padding-top: 20px !important;
+    }
+
+    img[class="fluid-image"] {
+      width: 100% !important;
+      height: auto !important;
+    }
+	
+	img[class="fluid-image2"] {
+      width: 70% !important;
+      height: auto !important;
+	  margin: 0 auto !important;
+    }
+
+    td[class="hide"] {
+      display: none !important;
+    } 
+
+    td[class="mobile-button"] {
+      padding: 12px 60px 12px 60px !important;
+    }
+  
+    td[class="mobile-button"] a {
+      font-size: 24px !important;
+    }
+  
+    
+		</style>
+	</head>
+	<body style="margin: 0; padding: 0; width: 100%;">
+
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+        	<tr>
+            <td align="center" bgcolor="#006699" style="display: block; padding: 20px 0 20px 0; width: 100%;">
+                    <!-- HIDDEN PREHEADER -->
+                    <div style="display: none; font-size: 1px; color:#333333; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+                    The lastest from PlanPhilly.com
+                    </div>
+                        <!-- WRAPPER TABLE -->
+                        <table border="0" cellpadding="0" cellspacing="0" class="wrapper" id="wrapper1" style="table-layout: fixed; max-width: 600px;">
+                            <!-- LOGO/PREHEADER TEXT -->
+                            <tr>
+                                <!--[if (gte mso 9) | (IE)]>
+                                
+                                 <td align="center">
+                                 <table border="0" cellpadding="0" cellspacing="0"  width="600" style="table-layout: fixed;"><tr>
+                                <![endif]-->
+                                <td align="center">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                                        <tr>
+                                            <td align="center" class="logo" style="padding: 0 0 10px 0;">
+                                                <a href="http://www.planphilly.com">
+                                                  <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/11/attachments/original/planphilly-logo-vector-gray.png?1437420198" alt="PlanPhilly"  height="auto" border="0" style="display: block;  max-width: 66%;" class="fluid-image" />
+                                                </a>
+                                             </td>
+                                         </tr>
+                                         <tr>
+                                         	<td align="center" class="logo" style="padding: 0 0 0 0;">      
+                                                <a href="http://www.newsworks.org">
+                                                  <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/whyy-newsworks-logo.png?1437617858" alt="NewsWorks"  height="auto" border="0" style="display: block; max-width: 66%;" class="fluid-image" />
+                                                </a> 
+                                            </td>
+                                
+                                        </tr>
+                                    </table>
+                                </td>
+                               <!--[if (gte mso 9) | (IE)]>
+                                </tr></table></td>
+                                <![endif]-->
+                            </tr>
+						</table>
+                </td>
+            </tr>
+		</table>
+        
+        
+        
+        
+        
+<!--  START COPYING FROM HERE FOR NATIONBUILDER 'BODY' // -->
+<!--  START COPYING FROM HERE FOR NATIONBUILDER 'BODY' // -->
+<!--  START COPYING FROM HERE FOR NATIONBUILDER 'BODY' // -->
+<!--  START COPYING FROM HERE FOR NATIONBUILDER 'BODY' // -->
+<!--  START COPYING FROM HERE FOR NATIONBUILDER 'BODY' // -->       
+   
+   
+   
+   
+   
+   
+        
+
+        <!-- CONTAINER TABLE -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+            <tr>
+            	<td align="center"  bgcolor="#ffffff" style="padding: 20px 0 10px 0;">
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0" class="wrapper" width="100%" style="max-width: 600px; table-layout: fixed;">
+                        <tr>
+                                 <!--[if (gte mso 9) | (IE)]>
+                                
+                                 <td align="center">
+                                 <table border="0" cellpadding="0" cellspacing="0"  width="600" style="table-layout: fixed;"><tr>
+                                <![endif]-->
+                        	<td align="center" bgcolor="#ffffff">
+                            	<table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                    <tr>
+                                    	<td align="center">
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td align="center" width="100%" style="padding: 20px 0 20px 0; color: #000000; font-family: Arial, sans-serif; font-weight: bold; font-size: 32px; line-height: 36px;" >
+                                                        Featured Articles
+                                                    </td>
+                                                </tr>    
+                                            </table>
+                                            
+                                            <!--  BEGIN ARTICLE ONE  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" align="center" style="padding: 5% 0 5% 0;">
+                                                                    <a href="http://www.planphilly.com">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/15trolley.jpg?1437617931" alt="PlanPhilly" height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #f46e6c; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;" class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://www.planphilly.com" style="color: #006699;">
+                                                                        Article 1 Title. Article 1 Title.
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 15px; line-height: 18px;" class="mobile-text-pad">
+                                                                    Article 1 Description. Article 1 Description. Article 1 Description.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14.4px;" class="mobile-text-pad">
+                                                                    Article 1 Date.    Article 1 Author.
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    <br>
+                                                                    <br>
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END ARTICLE ONE  -->
+                                            
+                                            <!--  BEGIN ARTICLE TWO  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" align="center" style="padding: 5% 0 5% 0;">
+                                                                    <a href="http://www.planphilly.com">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/15trolley.jpg?1437617931" alt="PlanPhilly" height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #f46e6c; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;" class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://www.planphilly.com" style="color: #006699;">
+                                                                        Article 2 Title. Article 2 Title.
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 15px; line-height: 18px;" class="mobile-text-pad">
+                                                                    Article 2 Description. Article 2 Description. Article 2 Description.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14px;" class="mobile-text-pad">
+                                                                    Article 2 Date.    Article 2 Author.
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    <br>
+                                                                    <br>
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END ARTICLE TWO  -->
+                                            
+                                            <!--  BEGIN ARTICLE THREE  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" align="center" style="padding: 5% 0 5% 0;">
+                                                                    <a href="http://www.planphilly.com">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/15trolley.jpg?1437617931" alt="PlanPhilly" height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #f46e6c; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;" class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://www.planphilly.com" style="color: #006699;">
+                                                                        Article 3 Title. Article 3 Title.
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 15px; line-height: 18px;" class="mobile-text-pad">
+                                                                    Article 3 Description. Article 3 Description. Article 3 Description.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14px;" class="mobile-text-pad">
+                                                                    Article 3 Date.    Article 3 Author.
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    <br>
+                                                                    <br>
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END ARTICLE THREE  -->
+                                            
+                                            <!--  BEGIN ARTICLE FOUR  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" align="center" style="padding: 5% 0 5% 0;">
+                                                                    <a href="http://www.planphilly.com">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/15trolley.jpg?1437617931" alt="PlanPhilly" height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #f46e6c; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;" class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://www.planphilly.com" style="color: #006699;">
+                                                                        Article 4 Title. Article 4 Title.
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 15px; line-height: 18px;" class="mobile-text-pad">
+                                                                    Article 4 Description. Article 4 Description. Article 4 Description.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14px;" class="mobile-text-pad">
+                                                                    Article 4 Date.    Article 4 Author.
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    <br>
+                                                                    <br>
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END ARTICLE FOUR  -->
+                                            
+                                            <!--  BEGIN ARTICLE FIVE  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" align="center" style="padding: 5% 0 5% 0;">
+                                                                    <a href="http://www.planphilly.com">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/15trolley.jpg?1437617931" alt="PlanPhilly" height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #f46e6c; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;" class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://www.planphilly.com" style="color: #006699;">
+                                                                        Article 5 Title. Article 5 Title.
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 15px; line-height: 18px;" class="mobile-text-pad">
+                                                                    Article 5 Description. Article 5 Description. Article 5 Description.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14px;" class="mobile-text-pad">
+                                                                    Article 5 Date.    Article 5 Author.
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END ARTICLE FIVE  -->
+                                            
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td align="center" style="padding: 10px 0 20px 0; color: #000000; font-family: Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 22px;" class="mobile-text-pad">
+                                                        
+                                                        <a href="http://www.planphilly.com/articles" style="color: #000000;">
+                                                            More Articles from this week
+                                                        </a>    
+                                                    </td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>
+                                                        
+                                                        <hr>
+                                                        
+                                                    </td>
+                                                </tr>    
+                                            </table>
+                                            
+                                            <!--  BEGIN EOTS SECTION  //  -->
+                        
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td>
+                                                        
+                                                        <!--  BEGIN EOTS LOGO  //  -->
+                                                        
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td class="mobile-image-pad" align="center" style="padding: 0 0 10px 0;">
+                                                                    <a href="http://www.planphilly.com/eyesonthestreet">
+                                                                        <img src="http://planphilly.com/uploads/media_items/logo-eots2.original.png" alt="Eyes on the Street"  height="auto" border="0" style="display: block; padding: 0; color: #000000; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #ffffff; -webkit-border-radius: 4px; border-radius: 4px; max-width: 100%;"  />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        
+                                                        <!--  //  END EOTS LOGO  -->
+                                                        
+                                                        <!--  BEGIN EOTS ARTICLE  //  -->
+                                                        
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="center" style="padding: 5% 5% 5% 5%;">
+                                                                    <a href="http://www.planphilly.com" >
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/15trolley.jpg?1437617931" alt="PlanPhilly" height="auto" border="0" style="display: block; padding: 0; color: #000000; font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; background-color: #ffffff; -webkit-border-radius: 4px; border-radius: 4px; border:none; max-width: 100%; " class="fluid-image" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 0 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 20px; line-height: 24px;" class="mobile-text-pad">
+                                                                    <a href="http://www.planphilly.com" style="color: #638438;">
+                                                                        EOTS ARTICLE TITLE. EOTS ARTICLE TITLE
+                                                                    </a>
+                                                                
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="padding: 10px 0 10px 0; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 14px;" class="mobile-text-pad">
+                                                                    EOTS ARTICLE DATE    EOTS ARTICLE AUTHOR
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td>
+                                                                    <br>
+                                                                    <hr>
+                                                                    <br>
+                                                                    <br>
+                                                                </td>
+                                                            </tr>       
+                                                        </table>
+                                                        
+                                                        <!--  // END EOTS ARTICLE  -->
+                                                        
+                                                    </td>    
+                                                </tr>
+                                            </table>    
+                                            
+                                            <!-- //  END EOTS SECTION  -->
+                                            
+                                            
+                                            <!-- BEGIN EVENTS SECTION  //  -->
+                                            
+                                            <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">    
+                                                <tr>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width: 300px; table-layout: fixed;">
+                                                            <tr>
+                                                                <td>
+                                                                    <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;"> 
+                                                                                     <tr>
+                                                                                        <td align="center" style="padding: 5% 0 10% 0;">
+                                                                                            <a href="http://www.planphilly.com/events">
+                                                                                                <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/upcomingevents.png?1437618108" alt="PlanPhilly Events Calendar"  height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; background-color: #564e75; -webkit-border-radius: 4px; border-radius: 4px;max-width: 100%;"  />
+                                                                                            </a>    
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                
+                                                                                <!--  BEGIN EVENT ONE  //  -->
+                                                                                
+                                                                                <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                                                    <tr>    
+                                                                                        <td align="left" style="padding: 10px 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 22px;">
+                                                                                            <a href="http://www.planphilly.com" style="color: #000000;">
+                                                                                                Event 1 Title. Event 1 Title.
+                                                                                            </a>    
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 0 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;">
+                                                                                            Event 1 Date. Event 1 Date.
+                                                                                                
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 0 10px 10px 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 11px; line-height: 14px;">
+                                                                                            Event 1 Location. Event 1 Location.
+                                                                                                
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                
+                                                                                <!--  //  END EVENT ONE  -->
+                                                                    
+                                                                                <!-- BEGIN EVENT TWO  //  -->
+                                                                    
+                                                                                <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">   
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 20px 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 22px;">
+                                                                                            <a href="http://www.planphilly.com" style="color: #000000;">
+                                                                                                Event 2 Title. Event 2 Title.
+                                                                                            </a>    
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 0 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;">
+                                                                                            Event 2 Date. Event 2 Date.
+                                                                                                
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 0 10px 10px 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 11px; line-height: 14px;">
+                                                                                            Event 2 Location. Event 2 Location.
+                                                                                                
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                
+                                                                                <!--  //  END EVENT TWO  -->
+                                                            
+                                                                                <!-- BEGIN EVENT THREE  //  -->
+                                                                    
+                                                                                <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">   
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 20px 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 22px;">
+                                                                                            <a href="http://www.planphilly.com" style="color: #000000;">
+                                                                                                Event 3 Title. Event 3 Title.
+                                                                                            </a>    
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 0 10px 0 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;">
+                                                                                            Event 3 Date. Event 3 Date.
+                                                                                                
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding: 0 10px 10px 10px; color: #000000; font-family: Arial, sans-serif; font-weight: normal; font-size: 11px; line-height: 14px;">
+                                                                                            Event 3 Location. Event 3 Location.
+                                                                                                
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                
+                                                                                <!--  //  END EVENT THREE  -->
+                                                           
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                         </table>       
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            
+                                            <!--  //  END EVENTS SECTION  -->
+                                            
+                                            <!-- BEGIN HOUSE ADS  //  -->
+                                            
+                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" class="wrapper" style="table-layout: fixed;">
+                                                <tr>
+                                                    <td style="padding: 20px 0 0 0; width: 100%;">
+                                                        <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                                            <tr>
+                                                                <td align="center" style="padding: 0 0 20px 0;">
+                                                                    <a href="http://planphilly.nationbuilder.com/">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/7/attachments/original/events-email-signup.png?1436362793" alt="Sign up for our events newsletter!"  height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; background-color: #589263; -webkit-border-radius: 4px; border-radius: 4px; max-width: 300px;" class="fluid-image2"/>
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" style="padding: 10px 0 10px 0;">
+                                                                    <a href="http://www.newsworks.org">
+                                                                        <img src="http://d3n8a8pro7vhmx.cloudfront.net/planphilly/mailings/14/attachments/original/newsworkslogo.jpg?1437618167" alt="NewsWorks"  height="auto" border="0" style="display: block; padding: 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 18px; background-color: #589263; -webkit-border-radius: 4px; border-radius: 4px; max-width: 300px;" class="fluid-image2" />
+                                                                    </a>    
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            
+                                            <!--  //  END HOUSE ADS  -->
+                                		</td>
+                                	</tr>
+                                </table>
+                            </td>
+                            
+                            <!--[if (gte mso 9) | (IE)]>
+                                </tr></table></td>
+                                <![endif]-->
+                            
+                        </tr>
+                    </table>
+                </td>
+            </tr>        
+        </table>            
+                    
+        <!-- // END CONTAINER TABLE  -->
+
+
+
+
+
+
+
+
+<!--   //  STOP COPYING HERE FOR NATIONBUILDER 'BODY'  -->    
+<!--   //  STOP COPYING HERE FOR NATIONBUILDER 'BODY'  --> 
+<!--   //  STOP COPYING HERE FOR NATIONBUILDER 'BODY'  --> 
+<!--   //  STOP COPYING HERE FOR NATIONBUILDER 'BODY'  --> 
+<!--   //  STOP COPYING HERE FOR NATIONBUILDER 'BODY'  --> 
+
+
+
+
+        
+        <!-- BEGIN FOOTER  // -->
+
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+            <tr>
+                <td align="center" bgcolor="#006699" style="width: 100%; padding: 0 0 20px 0;">
+                    
+                    <!-- WRAPPER TABLE -->
+                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="wrapper" style="table-layout: fixed; max-width: 600px;">
+                        <tr>
+
+                            <td align="center" style="padding: 5% 0 5% 0; color: #ffffff; font-family: Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 18px;" class="mobile-text-pad">
+                            	<table border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;">
+                                	<tr>
+                                    	<td align="center" style="padding: 0 10% 0 10%; color: #ffffff;">
+                                            <br/>
+                                            -=-=-<br/>
+                                            {{ settings.official_name }}{% if settings.has_address? %} &middot; {{ settings.address.one_line }} {% endif %}
+                                            <br/>This email was sent to {{ recipient.email }}.  To stop receiving emails, <a href="{{ settings.site.unsubscribe_url }}" style="color:#ffffff;">click here</a>.
+                                            {% if broadcaster.has_twitter? or broadcaster.has_facebook? %}
+                                            <br/>You can also keep up with {{ broadcaster.name }}
+                                              {% if broadcaster.has_twitter? and broadcaster.has_facebook_page? %}
+                                                on <a href="{{ broadcaster.twitter_profile_url }}" style="color:#ffffff;">Twitter</a> or <a href="{{ broadcaster.facebook_page_profile_url }}" style="color:#ffffff;">Facebook</a>.
+                                              {% elsif broadcaster.has_twitter? %}
+                                                on <a href="{{ broadcaster.twitter_profile_url }}" style="color:#ffffff;">Twitter</a>.
+                                              {% elsif broadcaster.has_facebook_page? %}
+                                              on <a href="{{ broadcaster.facebook_page_profile_url }}" style="color:#ffffff;">Facebook</a>.
+                                              {% endif %}
+                                            {% endif %}
+                                            <br/>
+                                            -=-=-<br/><br/>
+                                            Created with <a href="http://nationbuilder.com/" style="color:#ffffff;">NationBuilder</a>, the essential toolkit for leaders.
+                                        
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>        
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <!--  // END FOOTER  -->
+
+	</body>
+</html>
